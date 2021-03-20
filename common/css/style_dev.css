@@ -55,6 +55,7 @@ h1 {
 
 #main-content .icon {
   margin-right: 1em;
+  height: var(--text-font-size);
 }
 
 .overlay {
@@ -122,10 +123,6 @@ h1 {
   #main-content p,
   #main-content h1 {
     margin: 1em 0;
-  }
-
-  #main-content .icon {
-    height: 60%;
   }
 
   #side-content .logo {
