@@ -8,6 +8,8 @@
   --text-important-color: #3f3f3f;
   --text-important-font-size: 1.125em; /* 18px */
   --text-important-line-height: 1.333em; /* 24px */
+  --text-our-domain-content-font-size: 0.875em; /* 14px */
+  --text-our-domain-content-line-height: 1.286em; /* 18px */
   --h1-font-size: 2em; /* 32px */
   --h1-line-height: 1.125em; /* 36px */
   --h2-color: #3f3f3f;
@@ -205,17 +207,17 @@ header .icon {
 /*
   OUR DOMAIN
 */
-#our-domain .our-domain-accordion-header {
-  flex-flow: row nowrap;
-  align-items: center;
+#our-domain input {
+  position: absolute;
+  opacity: 0;
+  z-index: -1;
 }
 
 #our-domain ul {
   margin: 0;
-  padding-left: 25px;
+  padding-left: 24px;
 }
 
-#our-domain li,
 #our-domain h3 {
   margin-left: 0.4em;
 }
@@ -223,7 +225,49 @@ header .icon {
 #our-domain li {
   list-style-type: none;
   margin-top: 0.6em;
+  margin-left: 0.6em;
   color: #7b7b7b;
-  font-size: var(--text-important-font-size);
-  line-height: var(--text-important-line-height);
+  font-size: var(--text-our-domain-content-font-size);
+  line-height: var(--text-our-domain-content-line-height);
+}
+
+#our-domain .our-domain-tab {
+  width: 100%;
+  overflow: hidden;
+}
+
+#our-domain .our-domain-tab:not(:first-child) {
+  margin-top: 0.7rem;
+}
+
+#our-domain .our-domain-tab-label {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  cursor: pointer;
+}
+
+.our-domain-tab-label::after {
+  content: "❯";
+  color: var(--text-important-color);
+  text-align: center;
+  width: 1em;
+  height: 1em;
+  margin-left: 0.5em;
+  transition: all 0.35s;
+}
+
+input:checked + .our-domain-tab-label::after {
+  transform: rotate(90deg);
+}
+
+.our-domain-tab-content {
+  max-height: 0;
+  color: #2c3e50;
+  background: white;
+  transition: all 0.35s;
+}
+
+input:checked ~ .our-domain-tab-content {
+  max-height: 100vh;
 }
