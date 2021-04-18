@@ -23,7 +23,7 @@
   --h1-line-height: 1.125em; /* 36px */
   --h2-color: #3f3f3f;
   --h2-font-size: 2.25em; /* 36px */
-  --h2-line-height: 1.667em; /* 42px */
+  --h2-line-height: 1.167em; /* 42px */
 }
 
 /*
@@ -121,6 +121,7 @@ header nav {
 header .icon-link {
   display: flex;
   align-items: center;
+  padding: 1rem;
 }
 
 header .icon {
@@ -158,7 +159,7 @@ header .icon {
   overflow-x: auto;
 }
 
-#our-team .content figure:not(:first-child) {
+#our-team figure:not(:first-child) {
   margin-left: 1rem;
 }
 
@@ -348,4 +349,90 @@ input:checked ~ .our-domain-tab-content {
   font-size: var(--text-contact-disclaimer-font-size);
   line-height: var(--text-contact-disclaimer-line-height);
   color: var(--text-contact-disclaimer-color);
+}
+
+@media only screen and (min-width: 600px) {
+  :root {
+    --header-text-font-size: 2.25em; /* 36px */
+    --header-text-line-height: 1.167em; /* 42px */
+    --text-font-size: 1.25em; /* 20px */
+    --text-line-height: 1.4em; /* 28px */
+    --text-important-font-size: 1.5em; /* 24px */
+    --text-important-line-height: 1.333em; /* 32px */
+    --text-our-domain-content-font-size: 1.25em; /* 20px */
+    --text-our-domain-content-line-height: 1.4em; /* 28px */
+    --text-contact-title-font-size: 2.25em; /* 36px */
+    --text-contact-title-line-height: 1.22em; /* 44px */
+    --text-contact-content-font-size: 1.5em; /* 24px */
+    --text-contact-content-line-height: 1.333em; /* 32px */
+    --text-contact-disclaimer-font-size: 1.125em; /* 18px */
+    --text-contact-disclaimer-line-height: 1.222em; /* 22px */
+    --h1-font-size: 3em; /* 48px */
+    --h1-line-height: 1.167em; /* 56px */
+    --h2-font-size: 2.5em; /* 40px */
+    --h2-line-height: 1.2em; /* 48px */
+  }
+
+  /*
+    GLOBALS
+  */
+  .padded-wrapper {
+    padding: 0 4rem;
+  }
+
+  /*
+    HEADER
+  */
+  header {
+    padding: 0 4em;
+  }
+
+  /*
+    OUR TEAM
+  */
+  #our-team h2 {
+    margin-bottom: 0;
+  }
+
+  #our-team .flex-container {
+    flex-wrap: wrap;
+  }
+
+  #our-team .content figure {
+    margin: 1.5rem 1.5rem 0 0;
+  }
+
+  /*
+    LOCATION
+  */
+  #location iframe {
+    height: calc(100vw / 2);
+    max-height: 400px;
+  }
+
+  #location .location-info p,
+  #location .location-info a {
+    margin-left: 0.5em;
+    line-height: 1.7em;
+  }
+
+  /*
+    OUR DOMAIN
+  */
+  #our-domain li {
+    margin-top: 0.4em;
+  }
+
+  /*
+    CONTACT
+  */
+  #contact input,
+  #contact textarea {
+    font-size: var(--text-contact-content-font-size);
+    line-height: var(--text-contact-content-line-height);
+  }
+
+  #contact .padded-wrapper {
+    padding: 0 7rem;
+  }
 }
