@@ -21,6 +21,7 @@
   --text-contact-disclaimer-color: #3f3f3f;
   --h1-font-size: 2em; /* 32px */
   --h1-line-height: 1.125em; /* 36px */
+  --h1-border-color: #404554;
   --h2-color: #3f3f3f;
   --h2-font-size: 2.25em; /* 36px */
   --h2-line-height: 1.167em; /* 42px */
@@ -90,17 +91,50 @@ header {
   position: relative;
   width: 100%;
   height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   padding: 0 1.5em;
   background: url(../img/hero.png) no-repeat center;
   background-size: cover;
   color: var(--header-text-color);
 }
 
-header a {
+header > nav {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  height: 10vh;
+}
+
+header > nav > .logo {
+  align-self: flex-end;
+  width: 60px;
+  height: auto;
+  z-index: 1;
+  color: white;
+}
+
+header > nav > .languages.flex-container {
+  flex-flow: row nowrap;
+  align-items: flex-end;
+  font-size: var(--text-font-size);
+  line-height: var(--text-line-height);
+}
+
+header > nav > .languages div {
+  padding: 0 0.5em;
+}
+
+header > nav > .languages a {
+  text-decoration: none;
+  color: var(--header-text-color);
+}
+
+header > .content.flex-container {
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+}
+
+header > .content a {
   color: var(--header-text-color);
   font-size: var(--header-text-font-size);
   font-weight: 700;
@@ -387,6 +421,10 @@ input:checked ~ .our-domain-tab-content {
     padding: 0 4em;
   }
 
+  header > nav > .logo {
+    width: 80px;
+  }
+
   /*
     OUR TEAM
   */
@@ -434,5 +472,119 @@ input:checked ~ .our-domain-tab-content {
 
   #contact .padded-wrapper {
     padding: 0 7rem;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  :root {
+    --text-font-size: 1.375em; /* 22px */
+    --text-line-height: 1.455em; /* 32px */
+    --text-important-font-size: 1.75em; /* 28px */
+    --text-important-line-height: 1.286em; /* 36px */
+    --text-our-domain-content-font-size: 1.375em; /* 22px */
+    --text-our-domain-content-line-height: 1.455em; /* 32px */
+    --h1-font-size: 4em; /* 64px */
+    --h1-line-height: 1.156em; /* 74px */
+    --h2-font-size: 3.5em; /* 56px */
+    --h2-line-height: 1.43em; /* 64px */
+  }
+
+  /*
+    GLOBALS
+  */
+  .padded-wrapper {
+    padding: 0 12rem;
+  }
+
+  /*
+    HEADER
+  */
+  header {
+    padding: 0 12em;
+  }
+
+  /*
+    ABOUT US
+  */
+  #about-us figure {
+    margin-left: 2rem;
+  }
+
+  #about-us h2 {
+    margin: 0.5em 0 0;
+  }
+
+  #about-us .content.flex-container {
+    flex-direction: row-reverse;
+  }
+
+  #about-us .content > div p:first-child {
+    margin-top: 0;
+  }
+
+  /*
+    OUR TEAM
+  */
+  #our-team .content figure {
+    margin: 1.5rem 5.5rem 0 0;
+  }
+
+  #our-team .content figure:nth-child(2) {
+    margin-right: 4.5rem;
+  }
+
+  /*
+    LOCATION
+  */
+  #location h2 {
+    margin-bottom: -62px;
+  }
+
+  /* flex:auto, flex-grow:5 */
+  #location iframe {
+    width: 100%;
+    height: auto;
+  }
+
+  #location .content.flex-container {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+
+  #location .location-info {
+    width: -webkit-fill-available;
+    margin-top: 4rem;
+    padding-right: 2rem;
+  }
+
+  /* partial-border */
+  #location::before {
+    content: ""; /* This is necessary for the pseudo element to work. */
+    display: block; /* This will put the pseudo element on its own line. */
+    width: 60%; /* Change this to whatever width you want. */
+    padding-top: 20px; /* This creates some space between the element and the border. */
+    border-bottom: 4px solid var(--h1-border-color); /* This creates the border. Replace black with whatever color you want. */
+  }
+
+  /*
+    OUR DOMAIN
+  */
+  /*
+  #our-domain::before {
+    content: "";
+    display: block;
+    height: 100px;
+    padding-top: 20px;
+    border-left: 4px solid var(--h1-border-color);
+  }
+  */
+
+  /*
+    CONTACT
+  */
+  #contact .padded-wrapper {
+    padding: 0;
+    width: 600px;
+    margin: 0 auto;
   }
 }
