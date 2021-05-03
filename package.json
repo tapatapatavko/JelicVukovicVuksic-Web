@@ -1,0 +1,22 @@
+{
+  "name": "jelicvukovicvuksic-web",
+  "version": "1.0.0",
+  "description": "Jelić, Vuković, Vukšić web site project",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Fichonija/JelicVukovicVuksic-Web.git"
+  },
+  "author": "Filip Bolčić, Nina Jelić",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Fichonija/JelicVukovicVuksic-Web/issues"
+  },
+  "homepage": "https://github.com/Fichonija/JelicVukovicVuksic-Web#readme",
+  "dependencies": {
+    "mailgun-js": "^0.22.0"
+  }
+}

@@ -21,6 +21,7 @@
 
     <link href="common/css/normalize.css" rel="stylesheet" />
     <link href="common/css/style.css" rel="stylesheet" />
+    <script src="common/js/main.js"></script>
   </head>
   <body>
     <div class="flex-container">
@@ -306,21 +307,26 @@
               <h3>Imate pitanja?</h3>
               <p>Rado ćemo Vam pomoći</p>
             </div>
-            <form class="flex-container contact-content">
+            <form
+              name="contactForm"
+              class="flex-container contact-content"
+              action="/.netlify/functions/sendContactEmail"
+              onsubmit="sendContactEmail(event)"
+            >
               <div class="flex-container contact-content-item">
                 <label class="contact-form-label" for="txt-contact-name">Ime i prezime</label>
-                <input id="txt-contact-name" type="text" placeholder="Ovdje upišite Vaše ime i prezime" />
+                <input name="name" id="txt-contact-name" type="text" placeholder="Ovdje upišite Vaše ime i prezime" required />
               </div>
               <div class="flex-container contact-content-item">
                 <label class="contact-form-label" for="txt-contact-email">E-mail</label>
-                <input id="txt-contact-email" type="email" placeholder="Ovdje upišite Vaš e-mail" />
+                <input name="mail" id="txt-contact-email" type="email" placeholder="Ovdje upišite Vaš e-mail" required />
               </div>
               <div class="flex-container contact-content-item">
                 <label class="contact-form-label" for="txt-contact-message">Poruka</label>
-                <textarea id="txt-contact-message" rows="6" placeholder="Ovdje upišite Vašu poruku"></textarea>
+                <textarea name="message" id="txt-contact-message" rows="6" placeholder="Ovdje upišite Vašu poruku" required></textarea>
               </div>
               <div class="contact-content-item">
-                <input type="submit" value="POŠALJI PORUKU" />
+                <input name="submit" type="submit" value="POŠALJI PORUKU" />
               </div>
             </form>
             <p class="contact-disclaimer">

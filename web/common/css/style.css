@@ -344,7 +344,7 @@ input:checked ~ .our-domain-tab-content {
 #contact {
   background-color: #edeef3;
   margin-top: 4rem;
-  display: none; /* REMOVE LATER */
+  /* display: none; REMOVE LATER */
 }
 
 #contact .contact-title h3,
@@ -372,7 +372,7 @@ input:checked ~ .our-domain-tab-content {
 #contact input[type="submit"] {
   padding: 0.875em 1.333em;
   border-radius: 10px;
-  background-color: #5c71a7;
+  background-color: #102e7b;
   font-weight: bold;
   color: white;
   cursor: pointer;
