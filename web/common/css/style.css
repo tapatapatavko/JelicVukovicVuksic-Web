@@ -411,9 +411,6 @@ input:checked ~ .our-domain-tab-content {
 /*
   FOOTER
 */
-footer {
-  height: 150px;
-}
 
 @media only screen and (min-width: 600px) {
   :root {
@@ -514,9 +511,9 @@ footer {
     --text-font-size: 1.375em; /* 22px */
     --text-line-height: 1.455em; /* 32px */
     --text-important-font-size: 1.5em; /* 24px */
-    --text-important-line-height: 1.286em; /* 36px */
+    --text-important-line-height: 1.286em; /* 31px */
     --text-our-domain-content-font-size: 1.25em; /* 20px */
-    --text-our-domain-content-line-height: 1.455em; /* 32px */
+    --text-our-domain-content-line-height: 1.455em; /* 29px */
     --h1-font-size: 4em; /* 64px */
     --h1-line-height: 1.156em; /* 74px */
     --h2-font-size: 3.5em; /* 56px */
