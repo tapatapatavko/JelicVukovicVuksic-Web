@@ -47,3 +47,32 @@ async function sendContactEmail(e) {
     alert("Došlo je do pogreške prilikom slanja podataka: '" + responseBody + "'");
   }
 }
+
+// Close modal when modal overlay is clicked
+window.addEventListener("click", (event) => {
+  let modals = document.getElementsByClassName("modal");
+  for (const modal of modals) {
+    if (event.target == modal) {
+      modal.style.display = "none";
+    }
+  }
+});
+
+// Close model on escape key
+document.addEventListener("keydown", (event) => {
+  if (event.code == "Escape") {
+    closeModal();
+  }
+});
+
+function showModal(event) {
+  let modal = document.getElementById(event.target.id.replace("img", "modal"));
+  modal.style.display = "block";
+}
+
+function closeModal(event) {
+  let modals = document.getElementsByClassName("modal");
+  for (const modal of modals) {
+    modal.style.display = "none";
+  }
+}

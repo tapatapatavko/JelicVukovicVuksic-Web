@@ -27,10 +27,12 @@
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-YKP6VXFG07"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-      gtag('config', 'G-YKP6VXFG07');
+      gtag("config", "G-YKP6VXFG07");
     </script>
   </head>
   <body>
@@ -74,21 +76,23 @@
               </figure>
               <div>
                 <p>
-                  1996. godine odvjetnici partneri Davor Jelić i Ljubomir Vuković osnovali su zajednički ured. 2006. na tim su temeljima
-                  osnovali današnje odvjetničko društvo. Odvjetnik Luka Vukšić zaposlen je u odvjetničkom uredu od 2013., a partner u
-                  društvu od 2020. godine.
+                  Odvjetnici partneri Davor Jelić i Ljubomir Vuković osnovali su 1996. godine zajednički odvjetnički ured da bi 2006. godine
+                  na tim temeljima osnovali današnje odvjetničko društvo. Odvjetnik Luka Vukšić zaposlio se u odvjetničkom društvu 2013.
+                  godine, a partner je u društvu je od 2020. godine.
+                </p>
+                <p>Od dana osnivanja sjedište društva je u Zagrebu, Domagojeva ulica 4.</p>
+                <p>
+                  Pravnu pomoć pružamo fizičkim i pravnim osobama
+                  <strong>kako u gradu Zagrebu tako i na cjelokupnom području republike Hrvatske.</strong>
                 </p>
                 <p>
-                  Pravnu pomoć pružamo fizičkim i pravnim osobama <strong>u gradu Zagrebu i u cijelom području Republike Hrvatske.</strong>
+                  U pružanju odvjetničke usluge uvijek nastojimo biti stručni, etični i transparentni. Pri tome nastojimo svakom pojedinom
+                  klijentu posvetiti maksimalnu pažnju i odvojiti dovoljno vremena da bi riješili svaki pravni problem ili odgovorili na
+                  svako pojedino pravno pitanje.
                 </p>
                 <p>
-                  U pružanju odvjetničke usluge uvijek nastojimo biti stručni, etični i transparentni. Nastojimo svakom pojedinom klijentu
-                  posvetiti maksimalnu pažnju i odvojiti dovoljno vremena da bismo riješili svaki pravni problem i odgovorili na svako
-                  pravno pitanje poštujući načela kodeksa odvjetničke etike.
-                </p>
-                <p>
-                  Kakav god pravni savjet Vam je potreban ili kakav god bio pravni problem s kojim ste se suočili
-                  <strong>naš tim će Vam pomoći u pronalaženju rješenja koje će za vas biti najpovoljnije.</strong>
+                  Kakav god bio pravni problem s kojim ste se suočili
+                  <strong>naš tim će vam pomoći u pronalaženju rješenja koje će za vas biti najpovoljnije.</strong>
                 </p>
               </div>
             </div>
@@ -97,7 +101,14 @@
             <h2>NAŠ TIM</h2>
             <div class="flex-container content">
               <figure>
-                <img width="224" height="280" alt="Davor Jelić" src="./common/img/team/our-team-1.png" />
+                <img
+                  id="our-team-img-jelic"
+                  width="224"
+                  height="280"
+                  alt="Davor Jelić"
+                  src="./common/img/team/our-team-jelic.png"
+                  onmouseover="showModal(event)"
+                />
                 <figcaption>
                   <p class="our-team-figcaption-name"><strong>Davor Jelić</strong></p>
                   <p class="our-team-figcaption-title">Odvjetnik partner</p>
@@ -106,7 +117,14 @@
                 </figcaption>
               </figure>
               <figure>
-                <img width="224" height="280" alt="Ljubomir Vuković" src="./common/img/team/our-team-5.png" />
+                <img
+                  id="our-team-img-vukovic"
+                  width="224"
+                  height="280"
+                  alt="Ljubomir Vuković"
+                  src="./common/img/team/our-team-vukovic.png"
+                  onmouseover="showModal(event)"
+                />
                 <figcaption>
                   <p class="our-team-figcaption-name"><strong>Ljubomir Vuković</strong></p>
                   <p class="our-team-figcaption-title">Odvjetnik partner</p>
@@ -115,7 +133,14 @@
                 </figcaption>
               </figure>
               <figure>
-                <img width="224" height="280" alt="Luka Vukšić" src="./common/img/team/our-team-4.png" />
+                <img
+                  id="our-team-img-vuksic"
+                  width="224"
+                  height="280"
+                  alt="Luka Vukšić"
+                  src="./common/img/team/our-team-vuksic.png"
+                  onmouseover="showModal(event)"
+                />
                 <figcaption>
                   <p class="our-team-figcaption-name"><strong>Luka Vukšić</strong></p>
                   <p class="our-team-figcaption-title">Odvjetnik partner</p>
@@ -124,22 +149,153 @@
                 </figcaption>
               </figure>
               <figure>
-                <img width="224" height="280" alt="Mihovil Lucić" src="./common/img/team/our-team-3.png" />
+                <img width="224" height="280" alt="Mihovil Lucić" src="./common/img/team/our-team-lucic.png" />
                 <figcaption>
                   <p class="our-team-figcaption-name"><strong>Mihovil Lucić</strong></p>
                   <p class="our-team-figcaption-title">Odvjetnički vježbenik</p>
-                  <a class="our-team-figcaption-email" href="mailto:mail@mail.com">mihovil.lucic@jvh.hr</a>
+                  <a class="our-team-figcaption-email" href="mailto:mihovil.lucic@jvh.hr">mihovil.lucic@jvh.hr</a>
                   <a class="our-team-figcaption-phone" href="tel:+385918829483">+385 91 882 9483</a>
                 </figcaption>
               </figure>
               <figure>
-                <img width="224" height="280" alt="Marica Makar" src="./common/img/team/our-team-2.png" />
+                <img width="224" height="280" alt="Marica Makar" src="./common/img/team/our-team-makar.png" />
                 <figcaption>
                   <p class="our-team-figcaption-name"><strong>Marica Makar</strong></p>
                   <p class="our-team-figcaption-title">Tajnica društva</p>
                   <a class="our-team-figcaption-email" href="mailto:marica.makar@jvh.hr">marica.makar@jvh.hr</a>
+                  <a class="our-team-figcaption-phone" href="tel:+38598660513">+385 98 6605 13</a>
                 </figcaption>
               </figure>
+            </div>
+            <div id="our-team-modal-jelic" class="modal">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <img class="logo" width="56" height="30" alt="Logo" src="./common/img/icons/logo-black.svg" />
+                  <span class="close" onclick="closeModal(event)">&times;</span>
+                </div>
+                <div class="modal-body">
+                  <div class="modal-body-left">
+                    <figure>
+                      <img
+                        width="280"
+                        height="350"
+                        alt="Davor Jelić"
+                        src="./common/img/team/our-team-jelic.png"
+                        onclick="showModal(event)"
+                      />
+                    </figure>
+                    <div class="modal-body-extra-left">
+                      <a href="mailto:odvjetnik-jelic@jvh.hr">odvjetnik-jelic@jvh.hr</a>
+                      <a href="tel:+38598228664">+385 98 228 664</a>
+                    </div>
+                  </div>
+                  <div class="modal-body-right">
+                    <h3 class="modal-body-title">Davor Jelić</h3>
+                    <p class="modal-body-subtitle">Odvjetnik partner</p>
+                    <div class="modal-body-content-section">
+                      <p class="modal-body-content">
+                        Odvjetnik Davor Jelić diplomirao je na Pravnom fakultetu u Zagrebu 1982. godine. Nakon što je diplomirao zaposlio se
+                        kao odvjetnički vježbenik u odvjetničkom uredu Arko Silvije i Radmila u Zagrebu. Pravosudni ispit je položio 1986.
+                        godine, a 1987. godine otvorio je samostalni ured u Zagrebu.
+                      </p>
+                      <p class="modal-body-content">
+                        1979. godine diplomirao je na Višoj zrakoplovnoj školi i stekao titulu ing. aero prometa.
+                      </p>
+                    </div>
+                    <div class="modal-body-extra-right">
+                      <a href="mailto:odvjetnik-jelic@jvh.hr">odvjetnik-jelic@jvh.hr</a>
+                      <a href="tel:+38598228664">+385 98 228 664</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="modal-footer"></div>
+              </div>
+            </div>
+            <div id="our-team-modal-vukovic" class="modal">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <img class="logo" width="56" height="30" alt="Logo" src="./common/img/icons/logo-black.svg" />
+                  <span class="close" onclick="closeModal(event)">&times;</span>
+                </div>
+                <div class="modal-body">
+                  <div class="modal-body-left">
+                    <figure>
+                      <img
+                        width="280"
+                        height="350"
+                        alt="Ljubomir Vuković"
+                        src="./common/img/team/our-team-vukovic.png"
+                        onclick="showModal(event)"
+                      />
+                    </figure>
+                    <div class="modal-body-extra-left">
+                      <a href="mailto:odvjetnik-vukovic@jvh.hr">odvjetnik-vukovic@jvh.hr</a>
+                      <a href="tel:+38598319913">+385 98 319 913</a>
+                    </div>
+                  </div>
+                  <div class="modal-body-right">
+                    <h3 class="modal-body-title">Ljubomir Vuković</h3>
+                    <p class="modal-body-subtitle">Odvjetnik partner</p>
+                    <div class="modal-body-content-section">
+                      <p class="modal-body-content">
+                        Odvjetnik Ljubomir Vuković diplomirao je na Pravnom fakultetu u Zagrebu 1989. godine.
+                      </p>
+                      <p class="modal-body-content">
+                        Nakon što je diplomirao zaposlio se na poslovima pravnika u društvu Gortan d.d., da bi se 1993. godine zaposlio kao
+                        odvjetnički vježbenik kod odvjetnika Davora Jelić. Potom, 1996. godine, upisuje se u imenik odvjetnika te s
+                        odvjetnikom Davorom Jelić osniva zajednički odvjetnički ured, koji 2006. godine prerasta u Odvjetničko društvo u
+                        kojem društvu je danas partner.
+                      </p>
+                    </div>
+                    <div class="modal-body-extra-right">
+                      <a href="mailto:odvjetnik-vukovic@jvh.hr">odvjetnik-vukovic@jvh.hr</a>
+                      <a href="tel:+38598319913">+385 98 319 913</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="modal-footer"></div>
+              </div>
+            </div>
+            <div id="our-team-modal-vuksic" class="modal">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <img class="logo" width="56" height="30" alt="Logo" src="./common/img/icons/logo-black.svg" />
+                  <span class="close" onclick="closeModal(event)">&times;</span>
+                </div>
+                <div class="modal-body">
+                  <div class="modal-body-left">
+                    <figure>
+                      <img
+                        width="280"
+                        height="350"
+                        alt="Luka Vukšić"
+                        src="./common/img/team/our-team-vuksic.png"
+                        onclick="showModal(event)"
+                      />
+                    </figure>
+                    <div class="modal-body-extra-left">
+                      <a href="mailto:odvjetnik-vuksic@jvh.hr">odvjetnik-vuksic@jvh.hr</a>
+                      <a href="tel:+38598782011">+385 98 782 011</a>
+                    </div>
+                  </div>
+                  <div class="modal-body-right">
+                    <h3 class="modal-body-title">Luka Vukšić</h3>
+                    <p class="modal-body-subtitle">Odvjetnik partner</p>
+                    <div class="modal-body-content-section">
+                      <p class="modal-body-content">
+                        Odvjetnik Luka Vukšić diplomirao je na Pravnom fakultetu u Zagrebu 2009. godine. Nakon što je diplomirao zaposlio se
+                        kao odvjetnički vježbenik u odvjetničkom uredu u Zagrebu. Pravosudni ispit je položio 2012. godine, da bi se 2013.
+                        godine zaposlio kao odvjetnik u Odvjetničkom društvu u kojem je danas partner.
+                      </p>
+                    </div>
+                    <div class="modal-body-extra-right">
+                      <a href="mailto:odvjetnik-vuksic@jvh.hr">odvjetnik-vuksic@jvh.hr</a>
+                      <a href="tel:+38598782011">+385 98 782 011</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="modal-footer"></div>
+              </div>
             </div>
           </section>
           <section id="our-domain">
