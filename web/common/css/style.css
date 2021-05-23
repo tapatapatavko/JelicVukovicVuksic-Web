@@ -290,6 +290,10 @@ header .icon {
   margin-left: 1rem;
 }
 
+#our-team figure .hover-cursor {
+  cursor: pointer;
+}
+
 #our-team figcaption p,
 #our-team figcaption a {
   margin: 0.5em 0;
