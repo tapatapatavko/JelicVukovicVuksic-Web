@@ -100,6 +100,15 @@ a {
   border-bottom: 4px solid var(--h1-border-color);
 }
 
+.icon-link {
+  display: flex;
+  align-items: center;
+}
+
+.icon {
+  margin-right: 0.5em;
+}
+
 /* 
   MODAL
 */
@@ -235,13 +244,10 @@ header nav {
 }
 
 header .icon-link {
-  display: flex;
-  align-items: center;
   padding: 1rem;
 }
 
 header .icon {
-  margin-right: 0.5em;
   font-size: var(--header-text-font-size);
   height: var(--header-text-line-height);
 }
@@ -353,6 +359,11 @@ header .icon {
   font-size: 1.25rem; /* 20px */
   line-height: 2em; /* 40px */
   color: #3f3f3f;
+}
+
+#our-team .modal-body .icon {
+  height: 1em;
+  width: auto;
 }
 
 #our-team .modal-body .modal-body-extra-left {
